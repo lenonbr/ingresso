@@ -27,3 +27,16 @@ function comprarPista(qtd) {
     }
 }
 
+function comprarSuperior(qtd) {
+    let qtdSuperior = parseInt(document.getElementById('qtd-superior').textContent);
+
+    if(qtd > qtdSuperior) {
+        alert('Não há mais ingressos disponíveis para Superior.');
+    }
+    else {
+        qtdSuperior = qtdSuperior - qtd;
+        document.getElementById('qtd-superior').textContent = qtdSuperior;
+        alert('Compra realizada com sucesso.');
+    }
+}
+
