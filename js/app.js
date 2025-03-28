@@ -40,3 +40,16 @@ function comprarSuperior(qtd) {
     }
 }
 
+function comprarInferior(qtd) {
+    let qtdInferior = parseInt(document.getElementById('qtd-inferior').textContent);
+
+    if(qtd > qtdInferior) {
+        alert('Não há mais ingressos disponíveis para Inferior.');
+    }
+    else {
+        qtdInferior = qtdInferior - qtd;
+        document.getElementById('qtd-inferior').textContent = qtdInferior
+        alert('Compra realizada com sucesso.')
+    }
+}
+
