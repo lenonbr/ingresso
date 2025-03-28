@@ -14,7 +14,6 @@ function comprarPista(qtd) {
         alert('Não há mais ingressos disponíveis para Pista.');
     }
     else {
-        
         alert('Compra realizada com sucesso.')
     }
 
